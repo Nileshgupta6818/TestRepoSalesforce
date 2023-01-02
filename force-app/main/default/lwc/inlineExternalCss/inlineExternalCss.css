@@ -1,0 +1,12 @@
+.external{
+    color: brown;
+    font-size: medium;
+}
+.external:hover{
+    color: chartreuse;
+    font-size: xx-large;
+}
+.tokenEx{
+     color: var(--lwc-brandBackgroundDark);
+     background-color: var(--lwc-brandDisabled);
+}

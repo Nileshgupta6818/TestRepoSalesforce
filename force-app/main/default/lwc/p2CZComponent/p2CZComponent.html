@@ -1,0 +1,27 @@
+<template>
+    <c-alert-component name="Message from Parent" 
+       is-visible
+       message="parent to chid Communication"
+    
+    ></c-alert-component>
+    <div class="slds-m-around_x-small">
+     <c-child-carousel carousel-data={carousels}></c-child-carousel>
+    </div>
+    <lightning-card title="parent to child action on parent side " >
+        <div class="slds-m-around_x-small">
+            <lightning-input label="Enter percentage" value={progressNumber} onkeyup={changeValue}></lightning-input>
+            <div class="slds-m-around_medium"> 
+                 <c-p2c-progress percentage={progressNumber}></c-p2c-progress>
+            </div>
+          
+           </div>
+    </lightning-card>
+    <lightning-card title="call child method from parent">
+    
+        <lightning-button label="reset slider" onclick={handleClick}></lightning-button>
+
+        <c-c2p-slider></c-c2p-slider>
+     
+    </lightning-card>
+    
+</template>

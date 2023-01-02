@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Custom Label">
+       
+       <div class="slds-m-around_medium">
+        Label1 : {customLabels.CustomOne} <br/> <br/>
+        Label2 : {customLabels.CustomTwo} <br/>
+       </div>
+
+       </lightning-card>
+
+       <lightning-card title="show Toast">
+       
+        <div class="slds-m-around_medium">
+        <lightning-button class="slds-m-around_small" label="success" variant="brand" onclick={handleSucess}></lightning-button>
+        <lightning-button class="slds-m-around_small" label="warning" variant="brand" onclick={handleWarning}></lightning-button>
+        <lightning-button class="slds-m-around_small" label="error" variant="brand" onclick={handleError}></lightning-button>
+        <lightning-button class="slds-m-around_small" label="Info" variant="brand" onclick={handleInfo}></lightning-button>
+        </div>
+ 
+        </lightning-card>
+</template>

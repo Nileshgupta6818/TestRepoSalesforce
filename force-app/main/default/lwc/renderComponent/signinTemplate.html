@@ -1,0 +1,23 @@
+<template>
+    <lightning-card  title="render method ">
+        <div class="slds-m-around_medium">
+        <h1 class="slds-text-heading_medium">Sign In</h1>
+        <form class="slds-m-around_small">
+            <lightning-input type="email" label="email" ></lightning-input>
+            <lightning-input type="password" label="password" ></lightning-input>
+        </form>
+        <lightning-button class="slds-m-around_x-small"
+        label="Back"
+        title="Back"
+        onclick={backHome}
+        variant="destructive"
+        ></lightning-button>
+        <lightning-button class="slds-m-around_x-small"
+        label="Sign-In"
+        title="Sign-In"
+        onclick={submitData}
+        variant="success"
+        ></lightning-button>
+        </div>
+    </lightning-card> 
+</template>

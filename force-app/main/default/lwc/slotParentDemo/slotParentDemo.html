@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="slot ">
+    <div class="slds-m-around_medium">
+     <c-slot-child-demo>
+        <p class="slds-text-color_success" slot="name">ramesh </p>
+        <p class="slds-text-color_error" slot="age">22</p>
+        <p slot="footer">footer from class</p>
+     </c-slot-child-demo>
+
+    </div>
+    <div class="slds-m-around_medium">
+
+        <c-slot-child-demo>
+            <p class="slds-text-color_success" slot="name">ramesh </p>
+            <p class="slds-text-color_error" slot="age">22</p>
+           <!-- <p slot="footer">footer from class</p>-->  <!--reuseable component-->
+         </c-slot-child-demo>
+    </div>
+  
+    </lightning-card>
+</template>

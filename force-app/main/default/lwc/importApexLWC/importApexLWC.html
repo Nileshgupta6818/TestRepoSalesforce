@@ -1,0 +1,55 @@
+<template>
+    <lightning-card title="wire property with  apex">
+       <div class="slds-m-around_medium">
+        
+         <template if:true={accounts.data}>
+           <template for:each={accounts.data} for:item="account">
+            <div class="slds-box slds-box_xx_small" key={account.Id}>
+             <p><strong>Name : {account.Name}</strong></p>
+             <p><strong>Type :{account.Type}</strong></p>
+            
+            </div>
+           </template>
+         </template>
+       </div>
+    </lightning-card>
+    <lightning-card title="wire Method with apex">
+        <div class="slds-m-around_medium">
+         Added Condition
+          <template if:true={accountList}>
+            <template for:each={accountList} for:item="account">
+             <div class="slds-box slds-box_xx_small" key={account.Id}>
+             <p> <strong>Name : {account.Name}</strong></p>
+             <p><strong>Type :{account.newType}</strong></p> 
+             
+             </div>
+            </template>
+          </template>
+        </div>
+     </lightning-card>
+
+
+     <lightning-card title="wire with parameter">
+        <div class="slds-m-around_medium">
+         <lightning-combobox
+         label="select type"
+         name="select type"
+         value={selectedType}
+         options={picklistOptions}
+         onchange={handleChange}
+         ></lightning-combobox>
+         <strong>Filter Account Record</strong>
+         <template if:true={filterAccountResult.data}>
+            <template for:each={filterAccountResult.data} for:item="account">
+                <div class="slds-box slds-box_xx_small" key={account.Id}>
+                    <p> <strong>Name : {account.Name}</strong></p>
+                    <p><strong>Type :{account.Type}</strong></p>
+                </div>
+
+            </template>
+
+         </template>
+        </div>
+
+     </lightning-card>
+</template>

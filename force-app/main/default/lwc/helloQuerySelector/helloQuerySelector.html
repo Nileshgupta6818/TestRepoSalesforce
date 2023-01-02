@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  title="component composition">
+        <div class="slds-m-around_medium">
+       <h1>here is the H1 tag</h1>
+        </div>
+        <lightning-button label="click" variant="brand"
+         onclick={clickDemo}></lightning-button>
+        <template for:each={names} for:item="name">
+          <div class="forloop" key={name}>
+           {name}
+          </div>
+        </template>
+        <div class="child" lwc:dom="manual">
+
+        </div>
+    </lightning-card>
+</template>

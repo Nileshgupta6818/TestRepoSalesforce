@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <div>
+        <p>whats your name</p>
+        <slot name="name"></slot>  <!-- name slot used for show element on particualar area or part -->
+        <p>what your age</p>
+        <slot name="age"></slot>
+        <footer class="slds-card__footer slds-hide">
+             <slot name="footer" onslotchange={handleFooterChange}></slot>
+          </footer>
+        </div>
+       
+    </div>
+    
+</template>

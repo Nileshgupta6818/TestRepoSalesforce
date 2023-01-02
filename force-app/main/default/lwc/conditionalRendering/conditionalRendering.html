@@ -1,0 +1,27 @@
+<template>
+    <lightning-card  title="conditional rendering">
+        <div class="slds-m-around_medium">
+       
+            <lightning-button variant="brand" label="Brand" title="Primary action" 
+            onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+            <template if:true={isVisible}>
+             <div>data is visible now</div>
+            </template>
+            <template if:false={isVisible}>
+             <div>click button to see the data </div>
+            </template>
+
+      
+
+        <div>
+            <lightning-input type="text" label="Enter the word"  
+            onkeyup={changeInputValue}></lightning-input>
+        </div>
+        <template if:true={checkResult}>
+          its visible now
+        </template>
+        
+    </div>
+    </lightning-card>  
+</template>

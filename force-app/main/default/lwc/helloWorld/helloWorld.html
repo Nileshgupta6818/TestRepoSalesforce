@@ -1,0 +1,47 @@
+<template>
+<div>
+    
+    
+
+    <!-- {alpha[0]}   fetch index based value not allowed in lwc-->
+
+    
+    <lightning-card  title="Hello">
+        <div class="slds-m-around_medium">
+
+        <lightning-input type="text" value={title} label="Enter course Name" onkeyup={changeProperty}></lightning-input>
+        Name : {fullName} course :{title}<br/> 
+        </div>
+        
+    </lightning-card>
+
+    <lightning-card  title="change city with copy of obj">
+        <div class="slds-m-around_medium">
+
+        <lightning-input type="text" label="Enter city Name" value={address.city} onkeyup={changeCity}></lightning-input>
+         city name is : {address.city}
+        </div>
+        
+    </lightning-card>
+
+
+
+    <lightning-card  title="@Track Decorator">
+        <div class="slds-m-around_medium">
+
+        <lightning-input type="text" label="Enter city Name" onkeyup={changeAge}></lightning-input>
+        name: {person.name}  age : {person.age}
+        </div>
+        
+    </lightning-card>
+
+    <lightning-card  title="Getter methods">
+        <div class="slds-m-around_medium">
+        <div>User on 1st index {firstName}</div>
+         <div>sum of two number {sum}</div>
+        </div>
+        
+    </lightning-card>
+
+</div>
+</template>

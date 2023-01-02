@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="child to parent ">
+        <div class="slds-m-around_medium" onclose={handleChildEvent}>
+            <lightning-button label="show child"  variant="brand" onclick={handleChild}></lightning-button>
+             {msg}
+            <template if:true={isVisible}>
+               <c-c2p-model ></c-c2p-model>
+            </template>
+        </div>
+        
+    </lightning-card>
+</template>

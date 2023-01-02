@@ -1,0 +1,28 @@
+<template>
+    <lightning-card  title="multi picklist valuesss">
+      <div  class="slds-m-around-medium">
+        <div>
+        <lightning-combobox
+        name="rating"
+        label="rating"
+        value={ratingValue}
+        placeholder="Select rating"
+        options={ratingOptions}
+        onchange={handleChange} ></lightning-combobox>
+
+        <p>Selected value is: {ratingValue}</p>
+      </div>
+      <div>
+        <lightning-combobox
+            name="type"
+            label="type"
+            value={typeValue}
+            placeholder="Select type"
+            options={typeOptions}
+            onchange={handleChange} ></lightning-combobox>
+
+    <p>Selected value is: {typeValue}</p>
+      </div>
+    </div>
+    </lightning-card>
+</template>

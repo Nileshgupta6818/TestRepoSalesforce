@@ -1,0 +1,47 @@
+<template>
+    <lightning-card title="Navigation to View Page">
+        <div class="slds-m-around_medium">
+       <lightning-button label="Navigate View Page" variant="brand" onclick={handleNavigateViewPage}></lightning-button>
+        </div>
+        </lightning-card>    
+
+
+        <lightning-card title="Navigation to Edit Page">
+            <div class="slds-m-around_medium">
+           <lightning-button label="Navigate To  Edit Page" variant="brand" onclick={handleNavigateToEditPage}></lightning-button>
+            </div>
+            </lightning-card> 
+
+
+            <lightning-card title="Navigation to TAB">
+                <div class="slds-m-around_medium">
+               <lightning-button label="Navigate To TAB" variant="brand" onclick={handleNavigateToTab}></lightning-button>
+                </div>
+                </lightning-card>
+
+        
+                <lightning-card title="Navigation to LWC">
+                    <div class="slds-m-around_medium">
+                   <lightning-button label="Navigate To LWC" variant="brand" onclick={handleNavigateToLWC}></lightning-button>
+                    </div>
+                    </lightning-card>
+
+
+
+                    <lightning-card title="Navigation to AURA">
+                        <lightning-button label="Navigate To Aura" variant="brand" onclick={handleNavigateToAura}></lightning-button>
+                    </lightning-card>
+
+
+                    <lightning-card title="Navigation to Visualforce">
+                        <lightning-button label="Navigate To Visualforce" variant="brand" onclick={handleNavigateToVisualforce}></lightning-button>
+                    </lightning-card>
+
+                    <lightning-card title="fetch current page data ">
+                       <div class="slds-m-around_medium">
+                        <strong>
+                            {pageReference}
+                        </strong>
+                       </div>
+                    </lightning-card>
+</template>

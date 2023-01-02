@@ -1,0 +1,19 @@
+<template>
+   <!---<lightning-card  title="Hello">
+        <lightning-button label="New" slot="actions"></lightning-button>
+        <p class="slds-p-horizontal_small">Card Body (custom component)</p>
+        <p slot="footer">Card Footer</p>
+    </lightning-card>  -->
+
+   <c-child-reusable>
+    <h1 slot="header"> reusable component  slot from parent </h1>
+    <h1> body from the parent </h1>
+    <div slot="actions">
+        <lightning-button label="New" ></lightning-button>
+    </div>
+     <p slot="footer">Card Footer</p>
+
+   </c-child-reusable>
+
+
+</template>
